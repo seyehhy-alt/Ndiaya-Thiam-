@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZTZiODVjIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYjg4NjJmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiMxZDEyMGIiIHN0cm9rZT0idXJsKCNnKSIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q0YTI0YyIgc3Ryb2tlLXdpZHRoPSIuOCIgb3BhY2l0eT0iLjU1Ii8+CiAgPHBhdGggZD0iTTExLjMwIDM5LjAwVjM3LjQwSDEzLjgyVjIwLjkxSDExLjMwVjE5LjMySDE3LjQ2TDI5LjM0IDMzLjI1VjIwLjkxSDI2LjgzVjE5LjMySDMzLjcxVjIwLjkxSDMxLjE5VjM5LjAwSDI3Ljc0TDE1LjY4IDI0Ljc3VjM3LjQwSDE4LjE4VjM5LjAwWk0zOC42OSAzOS4wMFYzNy40MEg0MS4zMFYyMS4xMkgzNS45MFYyNC4yM0gzNC4xMFYxOS4zMkg1My42MVYyNC4yM0g1MS44M1YyMS4xMkg0Ni40MFYzNy40MEg0OS4wMlYzOS4wMFoiIGZpbGw9InVybCgjZykiLz4KICA8cGF0aCBkPSJNMTkgNDcgcTMuMjUgLTQuNSA2LjUgMCB0Ni41IDAgdDYuNSAwIHQ2LjUgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmJmNmVlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=">
   <style>
 :root {
   --ink: #1d120b;
@@ -140,12 +141,17 @@ footer .logo { color: #fff; font-size: 1.3rem; }
   .section { padding: 70px 6%; }
 }
 
+/* LOGO */
+.logo { display: inline-flex; align-items: center; gap: 10px; }
+.logo-icon { height: 44px; width: 44px; display: block; }
+.footer-logo { justify-content: center; }
+
 </style>
 </head>
 <body>
 
 <header class="nav" id="nav">
-  <a href="#accueil" class="logo">Ndiaya <span>Thiam</span></a>
+  <a href="#accueil" class="logo"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZTZiODVjIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYjg4NjJmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiMxZDEyMGIiIHN0cm9rZT0idXJsKCNnKSIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q0YTI0YyIgc3Ryb2tlLXdpZHRoPSIuOCIgb3BhY2l0eT0iLjU1Ii8+CiAgPHBhdGggZD0iTTExLjMwIDM5LjAwVjM3LjQwSDEzLjgyVjIwLjkxSDExLjMwVjE5LjMySDE3LjQ2TDI5LjM0IDMzLjI1VjIwLjkxSDI2LjgzVjE5LjMySDMzLjcxVjIwLjkxSDMxLjE5VjM5LjAwSDI3Ljc0TDE1LjY4IDI0Ljc3VjM3LjQwSDE4LjE4VjM5LjAwWk0zOC42OSAzOS4wMFYzNy40MEg0MS4zMFYyMS4xMkgzNS45MFYyNC4yM0gzNC4xMFYxOS4zMkg1My42MVYyNC4yM0g1MS44M1YyMS4xMkg0Ni40MFYzNy40MEg0OS4wMlYzOS4wMFoiIGZpbGw9InVybCgjZykiLz4KICA8cGF0aCBkPSJNMTkgNDcgcTMuMjUgLTQuNSA2LjUgMCB0Ni41IDAgdDYuNSAwIHQ2LjUgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmJmNmVlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=" alt="Logo Ndiaya Thiam" class="logo-icon">Ndiaya <span>Thiam</span></a>
   <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <nav id="menu">
     <a href="#prestations">Prestations</a>
@@ -279,7 +285,7 @@ footer .logo { color: #fff; font-size: 1.3rem; }
 </section>
 
 <footer>
-  <p class="logo">Ndiaya <span>Thiam</span></p>
+  <p class="logo footer-logo"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZTZiODVjIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYjg4NjJmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiMxZDEyMGIiIHN0cm9rZT0idXJsKCNnKSIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q0YTI0YyIgc3Ryb2tlLXdpZHRoPSIuOCIgb3BhY2l0eT0iLjU1Ii8+CiAgPHBhdGggZD0iTTExLjMwIDM5LjAwVjM3LjQwSDEzLjgyVjIwLjkxSDExLjMwVjE5LjMySDE3LjQ2TDI5LjM0IDMzLjI1VjIwLjkxSDI2LjgzVjE5LjMySDMzLjcxVjIwLjkxSDMxLjE5VjM5LjAwSDI3Ljc0TDE1LjY4IDI0Ljc3VjM3LjQwSDE4LjE4VjM5LjAwWk0zOC42OSAzOS4wMFYzNy40MEg0MS4zMFYyMS4xMkgzNS45MFYyNC4yM0gzNC4xMFYxOS4zMkg1My42MVYyNC4yM0g1MS44M1YyMS4xMkg0Ni40MFYzNy40MEg0OS4wMlYzOS4wMFoiIGZpbGw9InVybCgjZykiLz4KICA8cGF0aCBkPSJNMTkgNDcgcTMuMjUgLTQuNSA2LjUgMCB0Ni41IDAgdDYuNSAwIHQ2LjUgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmJmNmVlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=" alt="Logo Ndiaya Thiam" class="logo-icon">Ndiaya <span>Thiam</span></p>
   <p>Hamo Teffess, Guédiawaye · WhatsApp 77 962 53 81 · Fixe 33 837 06 15</p>
   <p class="copy">© 2026 Ndiaya Thiam. Tous droits réservés.</p>
 </footer>
